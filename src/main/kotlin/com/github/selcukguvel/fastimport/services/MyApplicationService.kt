@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.selcukguvel.fastimport.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.selcukguvel.fastimport.MyBundle
 
 class MyApplicationService {
 
