@@ -1,7 +1,7 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.selcukguvel.fastimport</id>
-    <name>fast-import</name>
+    <name>Fast Import</name>
     <vendor>selcukguvel</vendor>
 
     <depends>com.intellij.modules.platform</depends>
@@ -15,4 +15,19 @@
         <listener class="com.github.selcukguvel.fastimport.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+
+    <actions>
+        <group id="FastImportActions" text="Fast Import" popup="true">
+            <add-to-group group-id="EditMenu" anchor="last"/>
+            <action id="ImportPathAction"
+                    class="org.jetbrains.plugins.template.ImportPathAction"
+                    text="Import Path" description="Import path">
+                <keyboard-shortcut first-keystroke="control PERIOD" keymap="$default"/>
+            </action>
+            <action id="EditPathAction"
+                    class="org.jetbrains.plugins.template.EditPathAction"
+                    text="Edit Path" description="Edit path">
+            </action>
+        </group>
+    </actions>
 </idea-plugin>
