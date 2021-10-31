@@ -1,7 +1,10 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# fast-import Changelog
+# Fast Import Changelog
 
 ## [Unreleased]
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+- Import Path
+  - In order to import the path specified
+- Edit Path
+  - In order to edit the path to be imported
