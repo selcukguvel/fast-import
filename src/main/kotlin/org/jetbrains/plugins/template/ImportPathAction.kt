@@ -15,7 +15,9 @@ class ImportPathAction : AnAction() {
 
     override fun actionPerformed(e: AnActionEvent) {
         val path = PathStorageService.getPath(e.project!!)
-        performImportPathAction(e, "${path}\n")
+        if (path.isNotEmpty()) {
+            performImportPathAction(e, "${path}\n")
+        }
     }
 
     private fun performImportPathAction(e: AnActionEvent, path: String) {
