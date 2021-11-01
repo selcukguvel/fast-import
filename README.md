@@ -7,7 +7,7 @@
 <!-- Plugin description -->
 ## What is it for?
 
-Using this **IntelliJ** plugin, you can import the path you specified.
+Using this **IntelliJ-based** plugin, you can import the path you specified.
 It is useful if you need to import the same path everytime. 
 
 ## How to use it?
